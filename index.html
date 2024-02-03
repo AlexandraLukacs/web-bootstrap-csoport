@@ -5,39 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Lukács Szendy</title>
 </head>
 <body>
-    <main>
+    <main class="container">
         <header>
             <h1>Webáruház</h1>
         </header>
-        <nav>
-            <div>
-                <ul>
-                    <li><a href="index.html">Kezdőlap</a></li>
-                    <li><a href="admin.html">Galéria</a></li>
-                    <li><a href="tablazat.html">Mérettáblázat</a></li>
+        <nav class="navbar navbar-expand-sm bg-light">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Kezdőlap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admin.html">Galéria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tablazat.html">Mérettáblázat</a></li>
                 </ul>
             </div>
         </nav>
-        <aside>
-            <h3>Keresési feltételek</h3>
-            
-        </aside>
-        <article></article>
-        <aside>
-            <div>
-                <h2>Kapcsolódó cikkek 1</h2>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Ut ac ligula porttitor, commodo lacus id, accumsan sapien.</li>
-                    <li>Quisque sit amet sapien ligula.</li>
-                </ul>
-                <h2>Kapcsolódó cikkek 1</h2>
-                <p>Lorem ipsum duis at dictum leo. Mauris facilisis vehicula rutrum. Suspendisse rhoncus ultricies pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio lectus, vulputate sed elementum at, semper ac nunc. Nullam vel tortor augue. Nunc tempus elit lectus, sed laoreet orci facilisis ut. In scelerisque mattis leo, ac iaculis velit malesuada nec. Donec non odio leo. Aenean sollicitudin lorem malesuada justo laoreet, ut blandit velit scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </aside>
+        <div class="row">
+            <aside class="col-sm-3">
+                <div>
+                    <h3 class="small">Keresési feltételek</h3>
+                    <form action="/action_page.php">
+                        <label for="name">A termék neve:</label><br>
+                        <input type="text" id="name" name="name" value="A termék neve"><br>
+                        <label for="szures">Szűrés ár szerint:</label><br>
+                        <input type="range" name="szures" id="szures" oninput="this.form.szures.value = this.value">
+                    </form> 
+                </div>
+            </aside>
+            <article class="col-sm-6">
+                <div>
+                    <div>
+                        <h2>Retro gamer férfi póló</h2>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <p></p>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Retro gamer férfi póló</h2>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <p></p>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Retro gamer férfi póló</h2>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <p></p>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Retro gamer férfi póló</h2>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <p></p>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Retro gamer férfi póló</h2>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <p></p>
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <aside class="col-sm-3">
+                <div>
+                    <h2>Kapcsolódó cikkek 1</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li class="list-group-item">2. Ut ac ligula porttitor, commodo lacus id, accumsan sapien.</li>
+                        <li class="list-group-item">3. Quisque sit amet sapien ligula.</li>
+                    </ul>
+                    <h2>Kapcsolódó cikkek 1</h2>
+                    <p>Lorem ipsum duis at dictum leo. Mauris facilisis vehicula rutrum. Suspendisse rhoncus ultricies pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio lectus, vulputate sed elementum at, semper ac nunc. Nullam vel tortor augue. Nunc tempus elit lectus, sed laoreet orci facilisis ut. In scelerisque mattis leo, ac iaculis velit malesuada nec. Donec non odio leo. Aenean sollicitudin lorem malesuada justo laoreet, ut blandit velit scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </aside>
+        </div>
         <footer></footer>
     </main>
 </body>
