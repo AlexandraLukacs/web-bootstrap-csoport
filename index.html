@@ -26,18 +26,18 @@
             </div>
         </nav>
         <div class="row">
-            <aside class="col-sm-3">
+            <aside class="col-sm-2">
                 <div>
                     <h3 class="small">Keresési feltételek</h3>
                     <form action="/action_page.php">
                         <label for="name">A termék neve:</label><br>
                         <input type="text" id="name" name="name" placeholder="A termék neve"><br>
                         <label for="szures">Szűrés ár szerint:</label><br>
-                        <input type="range" name="szures" id="szures" oninput="this.form.szures.value = this.value">
+                        <input type="range" class="form-range" name="szures" id="szures" oninput="this.form.szures.value = this.value">
                     </form> 
                 </div>
             </aside>
-            <article class="col-sm-6 row">
+            <article class="col-sm-7 row" style="text-align: center;">
                 <section class="col-sm-4 card">
                   
                         <div class="card-header">
