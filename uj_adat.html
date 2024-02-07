@@ -28,68 +28,58 @@
         </nav>
         <article>
 
-            <div class="container">
-                <form action="/action_page.php">
-                    <div class="container mt-3">
-                        <div class="input-group mb-3">
-                          <span class="input-group-text">Név</span>
-                          <input type="text" class="form-control" placeholder="Vezetéknév">
-                          <input type="text" class="form-control" placeholder="Keresztnév">
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div class="container">
-                <h2>Póló címe:</h2>
-                <form action="/action_page.php">
-                    <div>
-                        <input type="text" class="form-control" placeholder="Adjon meg egy szöveget">
-                    </div>
-                </form>
-            </div>
-
-            <div class="container">
-                <h2>Póló képe:</h2>
-                <form action="/action_page.php">
-                  <input type="file" id="myFile" name="filename2">
-                </form>
-            </div>
-
-            <div class="container">
-                <h2>Mérete</h2>
-                <form action="/action_page.php">
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>S
-                        <label class="form-check-label" for="radio1"></label>
-                      </div>
-                      <div class="form-check">
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">M
-                        <label class="form-check-label" for="radio2"></label>
-                      </div>
-                      <div class="form-check">
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">L
-                        <label class="form-check-label" for="radio2"></label>
-                      </div>
-                      <div class="form-check">
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">XL
-                        <label class="form-check-label" for="radio2"></label>
-                      </div>
-                      <div class="form-check">
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">XXL
-                        <label class="form-check-label" for="radio2"></label>
-                      </div>
-                </form>
-              </div>
-
               <div class="container">
-                <h2>Ára</h2>
-                <form action="/action_page.php">
-                  <div>
-                    <input type="number" class="form-control" placeholder="Adjon meg egy árat">
-                </div>
-                </form>
+                  <form action="/action_page.php">
+
+                      <div>
+                        <label for="text">Póló neve:</label>
+                        <input type="text" class="form-control" placeholder="Adjon meg egy szöveget">
+                      </div>
+
+                      <div class="mb-3 mt-3">
+                        <label for="text">Póló szövege:</label>
+                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                      </div>
+
+                      <div>
+                        <label for="file">Póló képe:</label><br>
+                        <input type="file" id="myFile" name="filename2">
+                      </div>
+
+                      <div>
+                        <label for="number">Ára:</label>
+                        <input type="number" class="form-control" placeholder="Adjon meg egy árat">
+                      </div>
+
+                      <div>
+                        <label for="radio">Mérete:</label>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                          <label class="form-check-label" for="check1">S</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="check1" name="option2" value="something">
+                          <label class="form-check-label" for="check1">M</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="check1" name="option3" value="something">
+                          <label class="form-check-label" for="check1">L</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="check1" name="option4" value="something">
+                          <label class="form-check-label" for="check1">XL</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="check1" name="option5" value="something">
+                          <label class="form-check-label" for="check1">XXL</label>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Küldés</button>
+
+                  </form>
               </div>
+
         </article>
     </main>
 </body>
